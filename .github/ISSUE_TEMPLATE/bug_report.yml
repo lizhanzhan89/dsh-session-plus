@@ -1,0 +1,52 @@
+name: Bug 报告
+description: 报告一个可复现的问题
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        提交前请先搜索已有 issue，避免重复。
+  - type: input
+    id: dsh-version
+    attributes:
+      label: DSH 版本
+      description: 运行 `dsh --version` 的结果
+      placeholder: 0.2.x
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 现象
+      description: 实际发生了什么
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望
+      description: 你期望发生什么
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 侧栏分组方式切到「单列表」
+        2. 新建分组
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: console
+    attributes:
+      label: 控制台报错
+      description: 浏览器 DevTools 的报错，或 `window.__dshSessionPlus` 的输出
+      render: shell
+  - type: textarea
+    id: state
+    attributes:
+      label: 状态文件片段
+      description: 涉及分组时贴 `~/.dsh/profiles/web/session-plus.json` 的相关部分（请脱敏）
+      render: json

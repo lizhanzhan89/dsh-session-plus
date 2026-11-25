@@ -1,8 +1,25 @@
 {
   "name": "@dsh-external/dsh-session-plus",
   "version": "0.1.0",
-  "description": "Session Plus for the DSH Web sidebar: delete sessions permanently and organize the flat (single-list) view into groups with drag & drop and the session menu. | 中文：DSH Web 侧栏会话增强包：彻底删除会话；在单列表视图下创建会话组，通过拖拽或会话菜单把会话移入分组。",
-  "private": true,
+  "description": "DSH Web 侧栏会话增强包：彻底删除会话 + 单列表视图下的会话分组。",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "session",
+    "sidebar",
+    "group"
+  ],
+  "homepage": "https://github.com/lizhanzhan89/dsh-session-plus#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lizhanzhan89/dsh-session-plus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lizhanzhan89/dsh-session-plus/issues"
+  },
+  "author": "lizhanzhan89",
+  "license": "MIT",
   "type": "module",
   "main": "./lib/index.js",
   "files": [
@@ -11,7 +28,6 @@
     "README.md",
     "LICENSE"
   ],
-  "license": "MIT",
   "scripts": {
     "build": "bash scripts/build.sh",
     "build:client": "node scripts/build-client.mjs"

@@ -22,6 +22,14 @@ bash scripts/build.sh
 
 状态文件：`~/.dsh/profiles/web/session-plus.json`。
 
+## 开发
+
+```bash
+bash scripts/build.sh    # 改完 src/ 后构建 lib/
+```
+
+`lib/` 是入库产物，提交前务必重新构建。详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
 ## 许可
 
-MIT
+[MIT](LICENSE)
