@@ -1,0 +1,4 @@
+# dsh-session-plus bundle patch: 把插件挂载为 loader 入口（profile bundle 层）。
+- insert:
+    - id: dsh-session-plus
+      name: '@dsh-external/dsh-session-plus'
