@@ -1,6 +1,6 @@
 {
   "name": "@dsh-external/dsh-session-plus",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "DSH Web 侧栏会话增强包：彻底删除会话 + 单列表视图下的会话分组。",
   "keywords": [
     "dsh",
